@@ -1,0 +1,8 @@
+SET ANSI_PADDING on
+GO
+
+ALTER TABLE dbo.ICM_ITEM_MENSALIDADE_TRABALHO
+    ADD id_grupo_item_mensalidade_trabalho int null 
+        CONSTRAINT FK_ICM_IT_MENS_TRAB_ICM_GRP_IT_MENS_TRAB FOREIGN KEY 
+        REFERENCES dbo.ICM_GRUPO_ITEM_MENSALIDADE_TRABALHO (id_grupo_item_mensalidade_trabalho)
+GO

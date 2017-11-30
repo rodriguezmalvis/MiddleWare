@@ -1,0 +1,73 @@
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="LogUnit">
+  	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+  	<jta-data-source>java:jboss/datasources/CacMvMiddleware</jta-data-source>
+    
+   <!-- entidades mapeadas -->
+   <class>br.org.cac.cacmvmiddleware.modelo.BeneficiarioAssistencial</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.BeneficiarioAssistencialTodos</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.BeneficiarioOcupacional</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.Endereco</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.Especialidade</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.LogMiddleware</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.LogWebservice</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.MvCacDeParaBeneficiarioAssistencial</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.MvCacDeParaBeneficiarioOcupacional</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.MvCacDeParaPrestador</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.MvCacDeParaPrestadorEnderecos</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.MvCacDeParaPrestadorEspecialidades</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.Prestador</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.AtLogMvCac</class>
+   
+   <class>br.org.cac.integrador.modelo.Atendimento</class>
+   <class>br.org.cac.integrador.modelo.ContaMedica</class>
+   <class>br.org.cac.integrador.modelo.FormaPagamentoConverter</class>
+   <class>br.org.cac.integrador.modelo.ItemContaMedica</class>
+   <class>br.org.cac.integrador.modelo.ItemReembolso</class>
+   <class>br.org.cac.integrador.modelo.LoteContaMedica</class>
+   <class>br.org.cac.integrador.modelo.ProjecaoMensalidadeContrato</class>
+   <class>br.org.cac.integrador.modelo.ProjecaoMensalidadeTrabalho</class>
+   <class>br.org.cac.integrador.modelo.Reembolso</class>
+   <class>br.org.cac.integrador.modelo.SimNaoConverter</class>
+   <class>br.org.cac.integrador.modelo.SubProcesso</class>
+   <class>br.org.cac.integrador.modelo.TipoContaHospitalarConverter</class>
+   <class>br.org.cac.integrador.modelo.TipoGuiaConverter</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaAjusteSubProcesso</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaAtendimento</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaGrupoItemMensalidade</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaItemMensalidade</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaItemMensalidadeCobranca</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaItemMensalidadeDevolucao</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaMensalidade</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaMensalidadeCobranca</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaMensalidadeDevolucao</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaProcedimento</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.DeParaSubProcesso</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ErroProcessamento</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ErroProcessamentoMensalidade</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ErroProcessamentoReembolso</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.GrupoItemMensalidadeTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ItemMensalidadeTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.LoteTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.MensalidadeTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.Processamento</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ProjecaoGrupoItemMensalidadeTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.ReembolsoTrabalho</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.StatusEnvioGrupoItemMensalidade</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.StatusProcessamento</class>
+   <class>br.org.cac.integrador.modelo.infraestrutura.TipoProcessamento</class>
+    
+ </persistence-unit>
+ 
+ 
+ <persistence-unit name="SoulMV">
+  	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+  	<jta-data-source>java:jboss/datasources/SoulMV</jta-data-source>
+    
+   <!-- entidades mapeadas -->
+   <class>br.org.cac.cacmvmiddleware.modelo.CepLocalidade</class>
+   <class>br.org.cac.cacmvmiddleware.modelo.CepLogradouro</class>
+      
+ </persistence-unit>
+ 
+</persistence>
